@@ -1,7 +1,7 @@
 FROM postgres:11.9-alpine AS load_data
 
 ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=ubi123
+ENV POSTGRES_PASSWORD=postgres
 ENV POSTGRES_DB=Mobile
 ENV PGDATA=/data
 COPY ./latest.sql /docker-entrypoint-initdb.d/latest.sql
